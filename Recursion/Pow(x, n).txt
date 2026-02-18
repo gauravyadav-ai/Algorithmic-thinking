@@ -1,0 +1,31 @@
+while encountring this problem you might think this is simple recursion and we will go 1 step at a time and keep decreading power by 1 
+but how will u encounter long test cases.
+
+for example take n =10000
+Do u now think that the first solution that came to our mind is feasible ?
+
+exactly answer is NO!
+
+so what we do now ?
+think pow(2,5)
+how did u compute it in your mind ?
+
+Did u do 2*2*2*2*2 ?
+or something else ?
+
+I did 2* pow(2,4)
+and i knew pow(2,4)= 16 
+so 16*2 =32 
+
+This means we can short our problem in even powers reducing the steps 
+
+what if n=even =4 so answer becomes pow(2,4) 
+
+TO apply recursion we need a base case right ?
+what would be the base case while dealing with powers ? exactly correct thought ----> n=0 we return 1
+
+edge cases - what if n is negative
+pow(x,-n) ----> 1/pow(x,-n)
+thats it 
+
+Congratulations we have an optimised solution.
